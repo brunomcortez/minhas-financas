@@ -7,10 +7,10 @@ class FinancaController {
 
     adiciona(evento){
         evento.preventDefault()
-        this.listaFinancas.adiciona(new Financa())
         this.listaFinancas.adiciona(this.criaFinanca())
         this.financasView.update()
     }    
+   
 
     criaFinanca() {
         return new Financa(this.inputItem.value, "06/04/2020", 1, 200)

@@ -1,4 +1,5 @@
 class FinancasView {
+    
     constructor(elemento) {
         this.elemento = elemento
     }
@@ -40,6 +41,7 @@ class FinancasView {
         </tfoot>
       </table>`
     }
+
 
     update() {
         this.elemento.innerHTML = this.template()
